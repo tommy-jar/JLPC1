@@ -1,0 +1,15 @@
+module.exports = function () {
+  var data = {
+    workers: [
+      {
+        id:1,
+        nameWorker: "Luis Pérez Reyes",
+        percievedAmount: 8908,
+        fiscalYear: 2023,
+        rate : 0.24,
+      },
+    ]
+  }
+  return data
+}
+

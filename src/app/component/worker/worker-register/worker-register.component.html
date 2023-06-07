@@ -1,0 +1,25 @@
+
+<form [formGroup]="form" (submit)="aceptar()" class="order">
+  <h3> Registrar Tranajador</h3>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input required matInput  placeholder="Name" formControlName="nameWorker">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Perceived Amount</mat-label>
+      <input required matInput type="number" placeholder="Percieved Amount" formControlName="percievedAmount">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Fiscal Year</mat-label>
+      <input required matInput type="number" placeholder="Fiscal Year" formControlName="fiscalYear">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Rate</mat-label>
+      <input required matInput type="number" placeholder="Rate" formControlName="rate">
+    </mat-form-field>
+    <button class="order" [disabled]="form.invalid" type="submit" mat-raised-button color="primary">Aceptar</button>
+    <button class="order" [routerLink]="'/workers/list'" mat-raised-button color="primary">Lista</button>
+</form>
+
+
